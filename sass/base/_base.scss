@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-style: normal;
+  background-color: var(--light-text-color);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  margin: 0;
+}
+H1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: var(--title-main-color);
+}
+.link {
+  text-decoration: none;
+  display: block;
+}
+.list {
+  list-style: none;
+}
+img {
+  display: block;
+}
+
+.title {
+  margin: 0;
+}
