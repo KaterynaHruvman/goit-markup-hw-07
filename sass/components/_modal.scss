@@ -193,16 +193,14 @@
 }
 .modal-close-btn {
   position: absolute;
-  top: 18%;
-  right: 33%;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  display: block;
-  align-items: center;
   cursor: pointer;
-  transition: color 250ms linear;
-  background: $light-text-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--light-text-color);
   margin: 0;
   border: 1px solid rgba(163, 86, 86, 0.1);
   z-index: 110;
@@ -210,4 +208,7 @@
     color: $accent-color;
     fill: $accent-color;
   }
+}
+.modal {
+  position: relative;
 }
