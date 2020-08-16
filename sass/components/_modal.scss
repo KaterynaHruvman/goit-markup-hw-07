@@ -27,7 +27,7 @@
 
 .modal-form-title {
   margin-bottom: 30px;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -45,7 +45,7 @@
   height: 30px;
   padding: 12px 18px 12px 42px;
   border-radius: 4px;
-  border-color: var(--second-font-color);
+  border-color: $second-font-color;
 }
 
 .modal-form-input::placeholder {
@@ -54,7 +54,7 @@
 }
 
 .modal-form-input:focus::placeholder {
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .modal-form-message {
@@ -68,13 +68,13 @@
 .modal-form-message {
   display: block;
   width: 100%;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.1em;
   border: none;
   background-color: transparent;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -83,23 +83,23 @@
 }
 
 .modal-form-message:focus::placeholder {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .modal-form-input:focus,
 .modal-form-message:focus,
 .modal-form-input:not(:placeholder-shown),
 .modal-form-message:not(:placeholder-shown) {
-  outline-color: var(--accent-color);
+  outline-color: $accent-color;
 }
 
 .modal-form-label {
   position: absolute;
   top: 50%;
   left: 46px;
-  color: var(--main-text-color);
+  color: $main-text-color;
   transform: translateY(-50%);
-  font-family: var(--main-font);
+  font-family: $main-font;
   transition: transform 250ms linear;
   font-style: normal;
   font-weight: normal;
@@ -111,10 +111,10 @@
 .modal-form-input:focus + .modal-form-label,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label {
   transform: translate(-30px, -40px);
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .modal-form-input:focus ~ .modal-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-form-checkbox {
@@ -137,34 +137,34 @@
 .modal-form-custom-checkbox {
   display: inline-block;
   overflow: hidden;
-  background-color: var(--light-text-color);
+  background-color: $light-text-color;
   margin-right: 7px;
-  border: solid 1px var(--main-text-color);
+  border: solid 1px $main-text-color;
   border-radius: 2px;
 }
 .modal-form-option-span {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7px;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 .modal-form-option-span a {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .modal-form-checkbox:checked + .modal-form-custom-checkbox {
-  background-color: var(--accent-color);
-  border: solid 1px var(--light-text-color);
+  background-color: $accent-color;
+  border: solid 1px $light-text-color;
 }
 
 .svg-checkbox {
-  fill: var(--light-text-color);
+  fill: $light-text-color;
 }
 .modal-form-btn {
   letter-spacing: 0.09em;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -180,14 +180,14 @@
 
   width: 200px;
   height: 50px;
-  color: var(--light-text-color);
+  color: $light-text-color;
   border-radius: 4px;
   transition: background-color 250ms linear, color 250ms linear;
 }
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   color: #ffffff;
 }
 
@@ -207,13 +207,13 @@
   align-items: center;
   cursor: pointer;
   transition: color 250ms linear;
-  background: var(--light-text-color);
+  background: $light-text-color;
   margin: 0;
   border: 1px solid rgba(163, 86, 86, 0.1);
   z-index: 110;
 }
 
 .modal-close-btn:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: $accent-color;
+  fill: $accent-color;
 }

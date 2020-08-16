@@ -5,7 +5,7 @@
   align-items: center;
 }
 header {
-  background: var(--light-text-color);
+  background: $light-text-color;
 }
 .navigation-list {
   display: flex;
@@ -38,49 +38,57 @@ header {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--title-main-color);
+  color: $title-main-color;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
+  &:active {
+    color: $accent-color;
+  }
 }
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.navigation-list-link:active,
+
 .navigation-list-link.current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .header-adress-mail,
 .header-adress-tel {
   display: flex;
   align-items: center;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: $main-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
 }
-.header-adress-mail:hover,
-.header-adress-mail:focus,
-.header-adress-tel:hover,
-.header-adress-tel:focus {
-  color: var(--accent-color);
-}
+
 .navigation-list-item.studio::after {
   display: block;
   width: 47px;
   height: 4px;
   content: "";
-  background: var(--accent-color);
+  background: $accent-color;
   border-radius: 2px;
 }
 .navigation-list-item.portfolio::after {
@@ -88,15 +96,15 @@ header {
   width: 77px;
   height: 4px;
   content: "";
-  background: var(--accent-color);
+  background: $accent-color;
   border-radius: 2px;
 }
 .header-adress-mail-svg {
   margin-right: 10px;
-  fill: var(--second-font-color);
+  fill: $second-font-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-adress-item:hover .header-adress-mail-svg {
-  fill: var(--accent-color);
-  color: var(--accent-color);
+  fill: $accent-color;
+  color: $accent-color;
 }

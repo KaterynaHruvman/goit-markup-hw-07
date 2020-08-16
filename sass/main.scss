@@ -1,7 +1,8 @@
+@import "./utils/variables.scss";
 @import "./base/base.scss";
-@import "./utils/vares.scss";
 @import "./components/container.scss";
 @import "./components/modal.scss";
+@import "./components/section.scss";
 @import "./layout/hero.scss";
 @import "./layout/about.scss";
 @import "./layout/header.scss";
@@ -9,3 +10,4 @@
 @import "./layout/ourteam.scss";
 @import "./layout/clients.scss";
 @import "./layout/footer.scss";
+@import "./layout/portfolio.scss";

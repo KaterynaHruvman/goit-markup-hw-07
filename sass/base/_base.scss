@@ -7,10 +7,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 14px;
   font-style: normal;
-  background-color: var(--light-text-color);
+  background-color: $light-text-color;
 }
 ul {
   margin: 0;
@@ -25,7 +25,7 @@ h2,
 h3,
 h4 {
   font-weight: 700;
-  color: var(--title-main-color);
+  color: $title-main-color;
 }
 .link {
   text-decoration: none;

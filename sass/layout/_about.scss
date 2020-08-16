@@ -1,10 +1,10 @@
 /*-------------------------ABOUT US-------------------------*/
 .about-us-description {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--main-text-color);
+  color: $main-text-color;
   margin: 0;
 }
 .about-us {
@@ -14,7 +14,7 @@
   display: flex;
 }
 .about-us-title {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
