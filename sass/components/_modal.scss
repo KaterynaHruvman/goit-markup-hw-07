@@ -80,17 +80,14 @@
   font-size: 14px;
   line-height: 16px;
   border: 1px solid rgba(157, 164, 189, 0.4);
+  &:focus,
+  &:not(:placeholder-shown) {
+    outline-color: $accent-color;
+  }
 }
 
 .modal-form-message:focus::placeholder {
   color: $accent-color;
-}
-
-.modal-form-input:focus,
-.modal-form-message:focus,
-.modal-form-input:not(:placeholder-shown),
-.modal-form-message:not(:placeholder-shown) {
-  outline-color: $accent-color;
 }
 
 .modal-form-label {
@@ -177,18 +174,16 @@
   cursor: pointer;
   margin-left: 125px;
   margin-right: 123px;
-
   width: 200px;
   height: 50px;
   color: $light-text-color;
   border-radius: 4px;
   transition: background-color 250ms linear, color 250ms linear;
-}
-
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-  background-color: $accent-color;
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: #ffffff;
+  }
 }
 
 .is-hidden {
@@ -211,9 +206,8 @@
   margin: 0;
   border: 1px solid rgba(163, 86, 86, 0.1);
   z-index: 110;
-}
-
-.modal-close-btn:hover {
-  color: $accent-color;
-  fill: $accent-color;
+  &:hover {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }

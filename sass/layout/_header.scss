@@ -24,7 +24,7 @@ header {
   margin-right: 30px;
 }
 .logo {
-  font-family: "Raleway";
+  font-family: $second-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -33,7 +33,7 @@ header {
   margin-right: 85px;
 }
 .logo span {
-  font-family: "Raleway";
+  font-family: $second-font;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;

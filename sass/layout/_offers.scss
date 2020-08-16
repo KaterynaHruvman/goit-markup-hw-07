@@ -9,9 +9,9 @@
 }
 .offers-list-item {
   width: 370px;
-}
-.offers-list-item:not(:last-child) {
+  &:not(:last-child) {
   margin-right: 30px;
+}
 }
 .offers-list {
   display: flex;
